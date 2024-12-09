@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+    <nav style="background-color: rgb(247,229,210);" class="navbar navbar-expand-lg p-2 ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <h1><span class="text-danger">Metro</span>Flavors</h1>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 me-5">
+                        <li class="nav-item">
+                            <a class="nav-link active me-3" aria-current="page" href="Home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  mx-lg-2 me-5" href="About.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2 me-5" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2 me-5" href="Order.html">Order</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2 me-5" href="Contact.html">Contact us</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#authModal">Login</button>
+                        </li>
+                    </ul>
+                   
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="height: 100vh; background-image: url(images/hero\ image.jpg); background-size: cover; background-position: center;"
+        class="position-relative w-100">
+        <div class="position-absolute text-white d-flex flex-column align-items-start justify-content-center"
+            style="top: 0; right: 0; bottom: 0; left: 0; ">
+            <div class="container">
+                <div class="col-md-6">
+                    <h1 class="mb-4 mt-2 display-4 font-weight-bold">Enjoy Your <span style="color:brown;">Delicious
+                            Food</span></h1>
+                    <p style="color: #bbb;">From classic favorites to bold new flavors, every dish is a masterpiece
+                        waiting to be savored.</p>
+                    <div class="mt-3">
+                        <a href="menu.html" class="btn px-5 py-3 text-white mt-3 mt-sm-0"
+                            style="border-radius: 30px; background-color: brown;">Go Menu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Credit: Componentity.com -->
+    <a href="https://componentity.com" target="_blank" class="block">
+    </a>
+    <div class="modal fade" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="slider">
+                    <div class="form-container">
+                        <h3>Login</h3>
+                        <form>
+                            <div class="mb-3">
+                                <label for="loginEmail" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="loginEmail" placeholder="Enter your email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="loginPassword" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="loginPassword"
+                                    placeholder="Enter your password">
+                            </div>
+                            <button type="submit" class="btn btn-danger">Login</button>
+                            <p class="mt-2">Don't have an account? <a href="#" id="showSignup">Signup</a></p>
+                        </form>
+                    </div>
+                    <div class="form-container">
+                        <h3>Signup</h3>
+                        <form>
+                            <div class="mb-3">
+                                <label for="signupEmail" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="signupEmail"
+                                    placeholder="Enter your email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="signupPassword" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="signupPassword"
+                                    placeholder="Create a password">
+                            </div>
+                            <button type="submit" class="btn btn-danger">Signup</button>
+                            <p class="mt-2">Already have an account? <a href="#" id="showLogin">Login</a></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12  text-white p-2 d-flex justify-content-center align-items-center welcome">
+        <h2>WELCOME</h2>
+    </div>
+    <div class="row align-items-center">
+        <div class="col-md-6 order-md-2">
+            <img src="C:\restorent-2\images\rest_1.webp" alt="Our Values" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6 order-md-1">
+            <h1 class="menu-content ms-3 mb-3">Eat</h1>
+            <h5 class="ms-3 mb-3">Breakfast, Lunch and Artisanal Pastries</h5>
+            <p class=" ms-3">
+                Indulge in a menu full of fresh, delicious dishes that are both satisfying and nourishing. From
+                comforting favorites to exciting new flavors, every meal is crafted to delight your taste buds. We focus
+                on using only the best ingredients, ensuring every bite is full of flavor. Whether dining solo or with
+                friends, our food will make your meal special.
+            </p>
+        </div>
+    </div>
+    <div class="row align-items-center pt-1">
+        <div class="col-md-6">
+            <img src="C:\restorent-2\images\rest_2.webp" alt="Our Team" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6">
+            <h1 class="menu-content mb-3">Drink</h1>
+            <h5 class="mb-3">The Freshest Cup in Town </h5>
+
+            <p>
+                Quench your thirst with our refreshing drinks, from handcrafted mocktails to freshly pressed juices.
+                Each drink is made to complement your meal perfectly, adding to the overall experience. Enjoy unique
+                flavors and vibrant blends that will keep you coming back for more. Sip, relax, and let our drinks
+                refresh you with every pour.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="row align-items-center">
+        <div class="col-md-6 order-md-2">
+            <img src="C:\restorent-2\images\rest_3.webp" alt="Our Values" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6 order-md-1">
+            <h2 class="menu-content ms-3 mb-3">Enjoy</h2>
+            <h5 class="ms-3 mb-3">Make Yourself at Home</h5>
+            <p class=" ms-3">
+                Relax and enjoy every moment at our restaurant, where great food and drinks come together. Whether
+                you're here for a quick meal or a long, relaxing dinner, we aim to make every experience memorable. Our
+                welcoming atmosphere ensures you feel at home from the moment you arrive. It’s all about enjoying the
+                little things in life, and we’re here to help you do that.
+            </p>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4  mb-2">
+                    <h5>Opening Hours </h5>
+                    <div class="menu-list">
+                        <p>Mon - Fri: 8am - 10pm</p>
+                        <p>​​Saturday: 8am - 2pm</p>
+                        <p>​Sunday: Closed</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <h5>Order</h5>
+                    <div class="menu-list">
+                        <a href="menu.html">Veg</a>
+                        <a href="menu.html">Non-Veg</a>
+                        <a href="menu.html">Fresh Drinks</a>
+                        <a href="menu.html">Snacks</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Contact Us</h5>
+                    <p><i class="fas fa-envelope"></i> email@example.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123, Main Street, City, Country</p>
+                </div>
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                        <h5>Follow Us</h5>
+                    </div>
+                    <div class="social-icons col-12  d-flex justify-content-center">
+                        <a href="https://wa.me/1234567890" target="_blank" title="WhatsApp"><i
+                                class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.facebook.com" target="_blank" title="Facebook"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.twitter.com" target="_blank" title="Twitter"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com" target="_blank" title="Instagram"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com" target="_blank" title="LinkedIn"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4" style="border-top: 1px solid #6c6c6c;">
+            <div class="text-center">
+                <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+        const slider = document.querySelector('.slider');
+        const showSignup = document.getElementById('showSignup');
+        const showLogin = document.getElementById('showLogin');
+
+        showSignup.addEventListener('click', (e) => {
+            e.preventDefault();
+            slider.style.transform = 'translateX(-50%)';
+        });
+
+        showLogin.addEventListener('click', (e) => {
+            e.preventDefault();
+            slider.style.transform = 'translateX(0)';
+        });
+    </script>
+</body>
+
+</html>

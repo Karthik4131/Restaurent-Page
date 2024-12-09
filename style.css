@@ -1,0 +1,72 @@
+
+.welcome{
+background-color:rgb(96,105,93);
+}
+.modal-content {
+    overflow: hidden;
+}
+.menu-content{
+    color: brown;
+}
+.slider {
+    width: 200%;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.form-container {
+    width: 50%;
+    padding: 20px;
+}
+
+/* finish home */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+/* finish Order */
+.map-container {
+    height: 300px;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+/* finish contact */
+.footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 30px ;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer a:hover {
+    color: #007bff;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    margin: 0 10px;
+}
+
+.footer h5 {
+    margin-bottom: 20px;
+}
+
+.footer .menu-list a {
+    display: block;
+    margin-bottom: 8px;
+}
+/* finish Footers */
